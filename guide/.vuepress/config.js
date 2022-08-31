@@ -27,10 +27,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    smoothScroll: true,
+    repo: 'connekitius/azero',
+    repoLabel: 'Contribute!',
     editLinks: true,
-    docsDir: '',
-    editLinkText: '',
+    docsDir: 'guide',
+    docsBranch: 'guide',
     lastUpdated: true,
     sidebar: [
       {

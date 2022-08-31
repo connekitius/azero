@@ -1,0 +1,19 @@
+{
+  "name": "guide",
+  "version": "0.0.1",
+  "description": "The guides for Azero.",
+  "main": "index.js",
+  "authors": {
+    "name": "Con",
+    "email": "skyconnek@gmail.com"
+  },
+  "repository": "https://github.com/connekitius/azero/tree/guide",
+  "scripts": {
+    "dev": "vuepress dev guide",
+    "build": "vuepress build guide"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

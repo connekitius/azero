@@ -1,12 +1,11 @@
-name: ChangelogWebhookRunner
+name: 'Changelog Webhook Runner'
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'changelog-webhook-test'
     paths: 
       - 'CHANGELOG.md'
-  
-  workflow_dispatch:
 
 jobs:
   build:

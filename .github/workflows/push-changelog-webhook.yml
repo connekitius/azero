@@ -1,0 +1,21 @@
+name: 'Changelog Webhook Runner'
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'changelog-webhook-test'
+    paths: 
+      - 'CHANGELOG.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-runner
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.13.x
+          cache: npm
+      
+      - name: runFile
+        run: node webhook.js

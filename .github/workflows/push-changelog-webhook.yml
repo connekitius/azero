@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: 16.13.x
           cache: npm
+          
+      - run: npm ci
       
       - name: runFile
         run: node webhook.js

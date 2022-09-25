@@ -1,0 +1,3 @@
+@echo Starting bot...
+@npm start --silent
+@IF ERRORLEVEL -3008 @echo HELP

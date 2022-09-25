@@ -1,0 +1,1 @@
+@start /b "Azero" "cmd.exe" /k botStart.bat
